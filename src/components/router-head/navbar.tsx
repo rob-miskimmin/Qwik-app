@@ -1,6 +1,6 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
-import navStyle from "./navbar.css"
+import navStyle from "./navbar.css?inline"
 
 export default component$(() => {
     useStylesScoped$(navStyle)
