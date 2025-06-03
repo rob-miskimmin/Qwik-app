@@ -1,0 +1,7 @@
+.about {
+    padding: 2rem;
+    background-color: var(--theme-yellow);
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    margin: 2rem;
+}
