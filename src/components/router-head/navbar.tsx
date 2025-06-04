@@ -1,17 +1,34 @@
-import { component$ } from "@builder.io/qwik";
-import { Link } from "@builder.io/qwik-city";
+import { component$, useStylesScoped$ } from "@builder.io/qwik";
 
 
 export default component$(() => {
-
+    useStylesScoped$(`
+        header {
+          display: flex;
+          justify-content: space-between;
+          margin: 2rem;
+        }
+        nav {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+          }
+        a{
+            text-decoration: none;
+            color: purple
+          }
+        
+    
+       
+      `);
     return (
-        <header class="header">
+        <header>
             <h1>Marions Portraits</h1>
-        <nav>
-                <Link class="link" href="/">Home</Link>
-                <Link class="link" href="/about">About</Link>
-                <Link class="link" href="/contact">Contact</Link>
-        </nav>
+            <nav>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </nav>
         </header>
     );
 });

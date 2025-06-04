@@ -4,8 +4,9 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
+    width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -13,62 +14,18 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Geo";
     font-weight: bold;
     margin: 0;
     font-size: 1.8rem;
 }
-.header {
-    display: flex;
-    justify-content: space-between;
-    margin: 2rem;
-  }
- .header .link {
-      margin-left: 2rem;
-      text-decoration: none;
-      color: purple;
-  }
+
 footer {
     margin-top: auto;
     padding: 1rem;
     text-align: center;
     color: #ccc;
 }
-.pets img {
-    width: 10rem;
-    height: 10rem;
-    margin: 1rem;
-    border: 2px solid red
-}
-.animals img {
-    width: 10rem;
-    height: 10rem;
-    margin: 1rem;
-    border: 2px solid blue
-}
-.home button {
-        margin: 0 0 0.5rem 0.5rem;
-        width: 200px;
-        background-color: var(--theme-yellow);
-        border: 1px solid var(--theme-purple);
-        color: var(--theme-purple);
-        border-radius: 1rem;
-        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
-        padding: 0.5rem;
-        cursor: pointer;
-    
-}
 
-.gallery-wrapper {
-    opacity: 1;
-    transition: opacity 0.5s ease;
-  }
-  
-  .gallery-wrapper.fade-out {
-    opacity: 0;
-  }
-  
-  .gallery-wrapper.fade-in {
-    opacity: 1;
-  }
+
+
   

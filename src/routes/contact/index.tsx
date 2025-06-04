@@ -1,8 +1,19 @@
 import { component$, useSignal, useStore, useStylesScoped$ } from "@builder.io/qwik";
-import ContactStyles from "./contact.css?inline";
+
 
 export default component$(() => {
-  useStylesScoped$(ContactStyles);
+  useStylesScoped$(`
+    form {
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.contact-button {
+    margin-left: 2rem;
+    width: 25%;
+    padding: 0.5rem;
+}`);
 
   const showForm = useSignal(false);
   const showAnswer = useSignal(false);
