@@ -37,15 +37,15 @@ export default component$(() => {
         <>
         <h2> My Animal Gallery</h2>
         <div onClick$={() => showLion.value = !showLion.value}> 
-        <img src="/lion.jpg" alt="Lion picture" />
+        <img src="/lion.jpg" alt="Lion picture" height="400" width="600" />
         {showLion.value && <p>This is my Lion. He is painted with pastels on A3 paper. Cost is £100 with a black wood frame</p>}
         </div>
         <div onClick$={() => showTiger.value = !showTiger.value}>
-        <img src="/tiger.jpg" alt="Tiger picture" />
+        <img src="/tiger.jpg" alt="Tiger picture" height="400" width="600" />
         {showTiger.value && <p>This is my Tiger. He is painted with pastels on A3 paper. Cost is £100 with a black wood frame</p>}
         </div>
         <div onClick$={() => showPeacock.value = !showPeacock.value}>
-        <img src="/peacock.jpg" alt="Peacock picture" />
+        <img src="/peacock.jpg" alt="Peacock picture" height="400" width="600" />
         {showPeacock.value && <p>This is my Peacock. He is painted with pastels on A3 paper. Cost is £100 with a black wood frame</p>}
         </div>
 

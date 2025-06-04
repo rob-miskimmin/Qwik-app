@@ -52,9 +52,6 @@ export default component$(() => {
         <button type="submit" >Send</button>
       </form>)}
       {showAnswer.value && <p>Thank you for your message!</p>}
-      <p>{formstate.name}</p>
-      <p>{formstate.email}</p>
-      <p>{formstate.message}</p>
     </>
   );
 });
